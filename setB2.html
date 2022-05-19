@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+	 $(document).ready(function(){
+         $("#button1").click(function(){
+	 $("img").before("<b>Before Image</b>");
+	
+	 });
+
+	 $("#button2").click(function(){
+	 $("img").after("<b>After Image</b>");
+	 });
+
+	 });
+
+</script>
+
+</head>
+<body>
+  
+<img src="index.jpg" width="100" height="200"> 
+ 
+<br><button id = "button1">Add  Before</button>
+<button id = "button2">Add After</button>
+</body>
+</html>

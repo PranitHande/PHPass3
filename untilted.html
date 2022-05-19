@@ -1,0 +1,31 @@
+<html>
+<body>
+
+<p>Input you answer?</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let text;
+  let choice = prompt("Exams are near, have you started preparing for:", "Yes");
+  switch(choice) {
+    case "Yes":
+      text = "Good Well done";
+      break;
+    case "No":
+      text = "What are you doing?";
+      window.alert("Exams are near, have you started preparing for :"+ text);
+      break;
+    default:
+      text = "Start Preparing.";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
+
