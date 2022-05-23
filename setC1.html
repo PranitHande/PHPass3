@@ -5,13 +5,11 @@
   function myFunction()
   {
       var x = document.getElementById("pass").value;
+	  
       if(x != null && x !="")
       {
 	
-	       document.write(x.fontcolor( "red" ));
-          document.write(x.fontsize("30px"));
-		
-
+	 document.write((x.fontcolor( "red" )).fontsize("30px"));
       }
       else
       {
